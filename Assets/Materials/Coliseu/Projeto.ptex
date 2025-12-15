@@ -1,0 +1,451 @@
+{
+	"connections": [
+		{
+			"from": "noise_white",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "uniform",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		},
+		{
+			"from": "dirt",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 1
+		},
+		{
+			"from": "perlin",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 0
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 1
+		},
+		{
+			"from": "scratches",
+			"from_port": 0,
+			"to": "invert",
+			"to_port": 0
+		},
+		{
+			"from": "invert",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 0
+		},
+		{
+			"from": "bricks2",
+			"from_port": 0,
+			"to": "invert_2",
+			"to_port": 0
+		},
+		{
+			"from": "bricks2",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 0
+		},
+		{
+			"from": "blend_4",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 1
+		},
+		{
+			"from": "invert_2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 6
+		},
+		{
+			"from": "blend_5",
+			"from_port": 0,
+			"to": "occlusion2",
+			"to_port": 0
+		},
+		{
+			"from": "occlusion2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 5
+		},
+		{
+			"from": "uniform_2",
+			"from_port": 0,
+			"to": "blend_6",
+			"to_port": 1
+		},
+		{
+			"from": "bricks2",
+			"from_port": 0,
+			"to": "blend_6",
+			"to_port": 0
+		},
+		{
+			"from": "blend_5",
+			"from_port": 0,
+			"to": "blend_7",
+			"to_port": 1
+		},
+		{
+			"from": "blend_7",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "blend_6",
+			"from_port": 0,
+			"to": "invert_3",
+			"to_port": 0
+		},
+		{
+			"from": "invert_3",
+			"from_port": 0,
+			"to": "blend_7",
+			"to_port": 0
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "@@1127",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Unity - 3D": "D:/Unity/Projetos/Ordem Defense/Assets/Materials/Coliseu/ParedeColiseu"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 260,
+				"y": -60
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 0.86,
+				"depth_scale": 0.08,
+				"emission_energy": 1,
+				"flags_transparent": false,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1,
+				"size": 10,
+				"sss": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material"
+		},
+		{
+			"name": "noise_white",
+			"node_position": {
+				"x": -1613.595459,
+				"y": -443.286469
+			},
+			"parameters": {
+				"size": 11
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "noise_white"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": -1355.595459,
+				"y": -442.286469
+			},
+			"parameters": {
+				"amount": 0.36,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "uniform",
+			"node_position": {
+				"x": -1588.595215,
+				"y": -350.286438
+			},
+			"parameters": {
+				"color": {
+					"a": 1,
+					"b": 0.408203,
+					"g": 0.622907,
+					"r": 0.816406,
+					"type": "Color"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "uniform"
+		},
+		{
+			"name": "dirt",
+			"node_position": {
+				"x": -1337.595337,
+				"y": -675.286499
+			},
+			"parameters": {
+				"d_scale": 1,
+				"param0": 2,
+				"param1": 11
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "dirt"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": -1057.595337,
+				"y": -578.286438
+			},
+			"parameters": {
+				"amount": 0.09,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "perlin",
+			"node_position": {
+				"x": -1057.595337,
+				"y": -318.286438
+			},
+			"parameters": {
+				"iterations": 3,
+				"persistence": 0.5,
+				"scale_x": 4,
+				"scale_y": 4
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "perlin"
+		},
+		{
+			"name": "blend_3",
+			"node_position": {
+				"x": -802.595337,
+				"y": -490.286469
+			},
+			"parameters": {
+				"amount": 0.19,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "scratches",
+			"node_position": {
+				"x": -1158.595337,
+				"y": -109.786461
+			},
+			"parameters": {
+				"angle": 28,
+				"layers": 5,
+				"length": 0.25,
+				"randomness": 1,
+				"waviness": 0.51,
+				"width": 0.89
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "scratches"
+		},
+		{
+			"name": "blend_4",
+			"node_position": {
+				"x": -555.515442,
+				"y": -261.346466
+			},
+			"parameters": {
+				"amount": 0.01,
+				"blend_type": 10
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "invert",
+			"node_position": {
+				"x": -876.595337,
+				"y": -145.786469
+			},
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "invert"
+		},
+		{
+			"name": "bricks2",
+			"node_position": {
+				"x": -637.836731,
+				"y": -47.869507
+			},
+			"parameters": {
+				"bevel": 0,
+				"columns": 3,
+				"corner": 0.3,
+				"mortar": 0.07,
+				"pattern": 1,
+				"repeat": 1,
+				"round": 0,
+				"row_offset": 0.5,
+				"rows": 9
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "bricks2"
+		},
+		{
+			"name": "invert_2",
+			"node_position": {
+				"x": -412.836731,
+				"y": 104.630493
+			},
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "invert"
+		},
+		{
+			"name": "occlusion2",
+			"node_position": {
+				"x": -96.836731,
+				"y": -333.869507
+			},
+			"parameters": {
+				"param0": 11,
+				"param1": 256,
+				"param2": 2,
+				"param3": 3
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "occlusion2"
+		},
+		{
+			"name": "blend_5",
+			"node_position": {
+				"x": -347.836731,
+				"y": -127.869507
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 10
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "blend_6",
+			"node_position": {
+				"x": -303.836731,
+				"y": 8.130493
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 9
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "uniform_2",
+			"node_position": {
+				"x": -371.836731,
+				"y": 212.130493
+			},
+			"parameters": {
+				"color": {
+					"a": 1,
+					"b": 1,
+					"g": 0.7679,
+					"r": 0.601562,
+					"type": "Color"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "uniform"
+		},
+		{
+			"name": "blend_7",
+			"node_position": {
+				"x": -2.836731,
+				"y": -150.869507
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 12
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "invert_3",
+			"node_position": {
+				"x": -66.836731,
+				"y": 6.130493
+			},
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "invert"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}

@@ -1,0 +1,226 @@
+{
+	"connections": [
+		{
+			"from": "noise_white",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "perlin",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		},
+		{
+			"from": "bricks_uneven2",
+			"from_port": 0,
+			"to": "invert",
+			"to_port": 0
+		},
+		{
+			"from": "invert",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 6
+		},
+		{
+			"from": "bricks_uneven2_2",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "normal_map_convert_2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		},
+		{
+			"from": "bricks_uneven2",
+			"from_port": 0,
+			"to": "normal_map_convert_2",
+			"to_port": 0
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "@@1958",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Unity - 3D": "D:/Unity/Projetos/Ordem Defense/Assets/Materials/ChaoBunker/ChaoBunker_MAT"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 345,
+				"y": -59
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.04,
+				"emission_energy": 1,
+				"flags_transparent": true,
+				"metallic": 0,
+				"normal": 10,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material"
+		},
+		{
+			"name": "perlin",
+			"node_position": {
+				"x": -626,
+				"y": -163
+			},
+			"parameters": {
+				"iterations": 5,
+				"persistence": 0.45,
+				"scale_x": 4,
+				"scale_y": 4
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "perlin"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": -292,
+				"y": -119
+			},
+			"parameters": {
+				"amount": 0.71,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "noise_white",
+			"node_position": {
+				"x": -586,
+				"y": 39
+			},
+			"parameters": {
+				"size": 11
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "noise_white"
+		},
+		{
+			"name": "bricks_uneven2",
+			"node_position": {
+				"x": -392,
+				"y": 281
+			},
+			"parameters": {
+				"bevel": 0,
+				"corner": 0,
+				"iterations": 8,
+				"min_size": 0.3,
+				"mortar": 0.051,
+				"randomness": 0.5,
+				"round": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "bricks_uneven2"
+		},
+		{
+			"name": "invert",
+			"node_position": {
+				"x": 21,
+				"y": 427
+			},
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "invert"
+		},
+		{
+			"name": "bricks_uneven2_2",
+			"node_position": {
+				"x": -293,
+				"y": 18.5
+			},
+			"parameters": {
+				"bevel": 0,
+				"corner": 0,
+				"iterations": 8,
+				"min_size": 0.3,
+				"mortar": 0.051,
+				"randomness": 0.5,
+				"round": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "bricks_uneven2"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": -6,
+				"y": -45.5
+			},
+			"parameters": {
+				"amount": 0.71,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "normal_map_convert_2",
+			"node_position": {
+				"x": -21,
+				"y": 230.5
+			},
+			"parameters": {
+				"op": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "normal_map_convert"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}

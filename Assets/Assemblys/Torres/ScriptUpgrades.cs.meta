@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: 232f37dbfcb5b354db58174803806541
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BulletOBJ: {instanceID: 0}
+  - Upgrade1obj: {instanceID: 0}
+  - Upgrade2obj: {instanceID: 0}
+  - Upgrade3obj: {instanceID: 0}
+  - areaDeCompra: {instanceID: 0}
+  - Upgrade1Atual: {instanceID: 0}
+  - Upgrade2Atual: {instanceID: 0}
+  - Upgrade3Atual: {instanceID: 0}
+  - EfeitoAzul: {fileID: 1565059128428245667, guid: 0c624841cce05a64ead6a51d83ed987c, type: 3}
+  - UpSom: {instanceID: 0}
+  - sprite1x1: {instanceID: 0}
+  - sprite1x2: {instanceID: 0}
+  - sprite1x3: {instanceID: 0}
+  - sprite2x1: {instanceID: 0}
+  - sprite2x2: {instanceID: 0}
+  - sprite2x3: {instanceID: 0}
+  - sprite3x1: {instanceID: 0}
+  - sprite3x2: {instanceID: 0}
+  - sprite3x3: {instanceID: 0}
+  - CaminhoCompleto: {instanceID: 0}
+  - CaminhoBloqueado: {instanceID: 0}
+  - Botao1: {instanceID: 0}
+  - Botao2: {instanceID: 0}
+  - Botao3: {instanceID: 0}
+  - Fechou1: {instanceID: 0}
+  - Fechou2: {instanceID: 0}
+  - Fechou3: {instanceID: 0}
+  - "up1TextPre\xE7o": {instanceID: 0}
+  - "up2TextPre\xE7o": {instanceID: 0}
+  - "up3TextPre\xE7o": {instanceID: 0}
+  - verderText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,209 @@
+{
+	"connections": [
+		{
+			"from": "bricks2_2",
+			"from_port": 0,
+			"to": "invert",
+			"to_port": 0
+		},
+		{
+			"from": "invert",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 6
+		},
+		{
+			"from": "scratches",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "noise",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "bricks2",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "@@288",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Unity - 3D": "D:/Unity/Projetos/Ordem Defense/Assets/Materials/Teste Ladrilho/LadrilhoTeste2",
+				"Unreal": "D:/Unity/Projetos/Ordem Defense/Assets/Materials/LadrilhoTeste"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 748.451233,
+				"y": -126.022461
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 0.066406,
+					"g": 0.066406,
+					"r": 0.066406,
+					"type": "Color"
+				},
+				"ao": 0,
+				"depth_scale": 1,
+				"emission_energy": 0,
+				"flags_transparent": false,
+				"metallic": 0,
+				"normal": 0,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material"
+		},
+		{
+			"name": "bricks2",
+			"node_position": {
+				"x": -473.667236,
+				"y": -239.04007
+			},
+			"parameters": {
+				"bevel": 0,
+				"columns": 3,
+				"corner": 0.3,
+				"mortar": 0.06,
+				"pattern": 0,
+				"repeat": 1,
+				"round": 0.04,
+				"row_offset": 0.04,
+				"rows": 6
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "bricks2"
+		},
+		{
+			"name": "bricks2_2",
+			"node_position": {
+				"x": -107.865585,
+				"y": 734.824158
+			},
+			"parameters": {
+				"bevel": 0,
+				"columns": 3,
+				"corner": 0.3,
+				"mortar": 0.06,
+				"pattern": 0,
+				"repeat": 1,
+				"round": 0.04,
+				"row_offset": 0.04,
+				"rows": 6
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "bricks2"
+		},
+		{
+			"name": "invert",
+			"node_position": {
+				"x": 174.13443,
+				"y": 744.824097
+			},
+			"parameters": {
+
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "invert"
+		},
+		{
+			"name": "scratches",
+			"node_position": {
+				"x": -5.182442,
+				"y": -425
+			},
+			"parameters": {
+				"angle": -180,
+				"layers": 3,
+				"length": 0.1,
+				"randomness": 0.09,
+				"waviness": 0.15,
+				"width": 0.1
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "scratches"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": 37.908783,
+				"y": -175.21991
+			},
+			"parameters": {
+				"amount": 0.13,
+				"blend_type": 11
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		},
+		{
+			"name": "noise",
+			"node_position": {
+				"x": -141.37439,
+				"y": 72.371338
+			},
+			"parameters": {
+				"density": 0.35,
+				"size": 8
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "noise"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": 316.62561,
+				"y": -92.628662
+			},
+			"parameters": {
+				"amount": 0.06,
+				"blend_type": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "blend"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}

@@ -1,0 +1,10 @@
+/*
+Instructions to setup this material:
+- copy material.uasset and open the copy
+- copy the shader code below and paste it into the Custom node
+- assign LadrilhoTeste_albedo.png to the Albedo texture in the graph
+- assign LadrilhoTeste_height.png to the Height texture in the graph
+*/
+
+
+

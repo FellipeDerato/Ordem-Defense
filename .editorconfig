@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0660: O tipo define os operadores == ou !=, mas não substitui o Object.Equals(object o)
+dotnet_diagnostic.CS0660.severity = none
