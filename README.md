@@ -1,7 +1,7 @@
 
 # Ordem Defense
 
-Um jogo **Tower Defense** não comercial e open source inspirado no universo de **Ordem Paranormal** do Cellbit e no jogo Bloons TD 6.
+Um jogo **Tower Defense** não comercial e open source inspirado no universo de **Ordem Paranormal** do Streamer/Diretor Criativo/Youtuber Cellbit e no jogo Bloons TD 6.
 
 ## Sobre o Projeto
 
